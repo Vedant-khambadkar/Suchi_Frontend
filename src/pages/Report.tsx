@@ -1192,7 +1192,7 @@ const AddEditUserForm: React.FC<AddEditUserFormProps> = ({
     e.preventDefault();
     setApiError(null);
     setSubmitting(true);
-    window.location.reload();
+    
 
     try {
       const token = localStorage.getItem("token");
@@ -1304,6 +1304,7 @@ const AddEditUserForm: React.FC<AddEditUserFormProps> = ({
             ? "यूज़र सफलतापूर्वक अपडेट किया गया।"
             : "उपयोगकर्ता सफलतापूर्वक जोड़ा गया।"
         );
+      
         onCancel();
         if (onSubmit && res.data.user) {
           onSubmit({
@@ -1320,6 +1321,7 @@ const AddEditUserForm: React.FC<AddEditUserFormProps> = ({
           });
         }
         if (onUserAdded) onUserAdded();
+          window.location.reload()
       }
     } catch (err: any) {
       setSubmitting(false);

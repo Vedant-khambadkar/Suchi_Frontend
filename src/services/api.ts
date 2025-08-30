@@ -1,6 +1,6 @@
 // src/services/api.ts
 
-const BASE_URL = "https://rss-project-weef.onrender.com/api";
+const BASE_URL = "https://suchi-w8jp.onrender.com/api";
 // const BASE_URL ='https://rss-project-30c4.onrender.com/api';
 // const BASE_URL ='http://localhost:3000/api'; // Use your local development URL
   
